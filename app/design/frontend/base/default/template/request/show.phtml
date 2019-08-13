@@ -1,0 +1,47 @@
+<div>
+    <h2><?php echo $this->__('My Requests') ?></h2>
+
+	<?php echo $this->showblock(); ?>
+
+	<h3><?php echo $this->__('Add new request') ?></h3>
+
+	<form action="<?php echo Mage::getUrl('request/index/add') ?>" method="post" name="formaddrequest">
+		<p><strong>Theme ( up to 100 characters )</strong><br /><input type="text" name="form_MR_theme" value="" style="width:95%" /></p>
+		<p><strong>Message</strong><br /><textarea name="form_MR_message"  style="width:95%" rows="10"></textarea></p>
+		<p><input type="submit" name="form_MR_submit" value="Add" /></p>
+	</form>
+
+</div>
+
+
+<style type="text/css">
+.request_table td, .request_table th{
+  padding:3px;
+}
+.request_table th{
+  font-weight:bold;
+}
+.request_table table{
+  width:100%;
+}
+.request_new{
+  color:#ff0000;
+}
+.clicktagtr{
+  cursor:pointer;
+}
+</style>
+
+<script>
+  function fshowtr(id){
+    if(document.getElementById("showtr"+id)){
+      if(document.getElementById("showtr"+id).style.display=="none"){
+        document.getElementById("showtr"+id).style.display="table-row";
+      }else{
+        document.getElementById("showtr"+id).style.display="none";
+      }
+    }else{
+      document.getElementById("showtr"+id).style.display="table-row";
+    }
+  }
+</script>

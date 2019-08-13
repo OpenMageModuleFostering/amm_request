@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Amm_Request>
+            <version>0.0.1</version>
+        </Amm_Request>
+    </modules>  
+	
+	<frontend>
+       <routers>
+          	<request>
+              	<use>standard</use>
+              	<args>
+                 	<module>Amm_Request</module>
+                 	<frontName>request</frontName>
+              	</args>
+           	</request>
+       </routers>
+	   <layout>
+		   <updates>
+				<request>
+					 <file>request.xml</file>
+				 </request>
+			</updates>
+		</layout>
+    </frontend>
+	
+    <admin>
+    	<routers>
+			 <request>
+				<use>admin</use>
+				<args>
+				   <module>Amm_Request</module>
+				   <frontName>request</frontName>
+				</args>
+			 </request>
+		</routers>
+    </admin>
+
+	 <adminhtml>
+	   <layout>
+		  <updates>
+			  <request>
+				  <file>request.xml</file>
+			   </request>
+		  </updates>
+	   </layout>
+	   <menu>
+		  <adminhtml translate="title" module="adminhtml">
+			 <title>Additional modules</title>
+			 <sort_order>100</sort_order>
+			 <children>
+				 <requestindex translate="title" module="adminhtml">
+					   <title>Requests</title>
+					   <action>request/adminhtml_index</action>
+					   <sort_order>10</sort_order>
+				  </requestindex>
+			  </children>
+		   </adminhtml>
+		</menu>
+	</adminhtml>
+
+		<global>
+			<blocks>
+				<request>
+					<class>Amm_Request_Block</class>
+				</request>
+			</blocks>
+			<helpers>
+	            <request>
+	                <class>Amm_Request_Helper</class>
+	            </request>  
+	        </helpers>
+			<models>
+				<request>
+					 <class>Amm_Request_Model</class>
+					 <resourceModel>request_mysql4</resourceModel>
+				</request>
+				<request_mysql4>
+					 <class>Amm_Request_Model_Mysql4</class>
+					 <entities>
+						 <request>
+						   <table>amm_request</table>
+						 </request>
+					  </entities>
+				</request_mysql4>
+			</models>
+					<!-- allow the plugin to read and write -->
+				<resources>
+				
+					<request_setup>
+		                <setup>
+		                    <module>Amm_Request</module>
+		                    <class>Amm_Request_Model_Mysql4_Setup</class>
+		                </setup>		                
+		            </request_setup>
+		        
+						<!-- connection to write -->
+						<request_write>
+							<connection>
+								<use>core_write</use>
+							</connection>
+						</request_write>
+						<!-- connection to read -->
+					   <request_read>
+						  <connection>
+							 <use>core_read</use>
+						  </connection>
+					   </request_read>
+				</resources>
+		</global>
+</config>

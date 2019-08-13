@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<layout version="0.0.1">
+  <request_adminhtml_index_index>
+     <reference name="content">
+             <block type="request/adminhtml_grid" name="request_grid" />
+      </reference>
+   </request_adminhtml_index_index>
+
+   <request_adminhtml_index_edit>
+     <reference name="content">
+             <block type="request/adminhtml_edit" name="request_edit" />
+      </reference>
+   </request_adminhtml_index_edit>
+</layout>

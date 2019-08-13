@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Amm_Request</name>
+    <version>1.0.0.2</version>
+    <stability>stable</stability>
+    <license>GNU</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Request</summary>
+    <description>Request</description>
+    <notes>Stable</notes>
+    <authors><author><name>Alexey</name><user>softaliance</user><email>softaliancecom@gmail.com</email></author></authors>
+    <date>2013-03-13</date>
+    <time>15:01:14</time>
+    <contents><target name="magecommunity"><dir name="Amm"><dir name="Request"><dir name="Block"><dir name="Adminhtml"><dir name="Edit"><file name="Form.php" hash="713e0e664a51119f422fda57c38bd3b0"/></dir><file name="Edit.php" hash="d581e4ecc9b56130dbc59444056712d6"/><file name="Grid.php" hash="39b572c4aec2d9bb13d90024b02caefa"/><dir name="Request"><file name="Grid.php" hash="cf0a82addda6416e336185fda7b0197a"/></dir></dir><file name="Monblock.php" hash="76d9dcf27ee7c9ca689276e162f7e3fa"/></dir><dir name="Helper"><file name="Data.php" hash="0859583f89bbdf4c63c222b88974ef08"/></dir><dir name="Model"><dir name="Mysql4"><dir name="Request"><file name="Collection.php" hash="241f41408674e25498db84a957e49d49"/></dir><file name="Request.php" hash="4a6e1a14f68db2aed0799905ad65085e"/><file name="Setup.php" hash="5add7efe4b3a5a24c982be2503c4b2fc"/></dir><file name="Request.php" hash="e52cdc5fe7aae85b2803202b355aea1c"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="IndexController.php" hash="5c330701173d6a43eebde16097047bdd"/></dir><file name="IndexController.php" hash="c707a241f5632c225f03a85b91ec68f8"/></dir><dir name="etc"><file name="config.xml" hash="34b467a0dca9e6bfefa8105ee962d1d2"/></dir><dir name="sql"><dir name="request_setup"><file name="mysql4-install-0.0.1.php" hash="7d2079694df152f349fc59dbae3fb2d6"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="request.xml" hash="dcd2a5c07ceedd42f4587e80908c956b"/></dir></dir></dir></dir><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="request.xml" hash="c91a8ac9ed4d6e0b659c5da67e0ec36e"/></dir><dir name="template"><dir name="request"><file name="show.phtml" hash="db2f6d15004b787a58591445054280e1"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Amm_Request.xml" hash="28a3be64b71486ce99e8809034b65643"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

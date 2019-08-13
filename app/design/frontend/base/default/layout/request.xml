@@ -1,0 +1,27 @@
+<layout version="0.1.0">
+    <default>
+        <reference name="content">
+        </reference>
+    </default>
+
+    <customer_account>
+        <reference name="customer_account_navigation">
+            <action method="addLink" translate="label" module="request"><name>request</name><path>request</path><label>My Requests</label></action>
+        </reference>
+    </customer_account>
+  
+
+    <request_index_index>
+          <remove name="right"/>
+
+          <update handle="customer_account"/>
+          
+          <reference name="root">
+              <action method="setTemplate"><template>page/2columns-left.phtml</template></action>
+          </reference>
+
+          <reference name="content">
+                <block type="request/monblock"  name="show_monblock" template="request/show.phtml" />
+          </reference>
+    </request_index_index>
+</layout>
