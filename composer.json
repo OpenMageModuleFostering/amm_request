@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Amm_Request",
+    "name": "OpenMageModuleFostering\/Amm_Request",
     "type": "magento-module",
     "license": "GNU",
     "homepage": "",
     "description": "Request",
     "authors": [
-    {
-        "name": "Alexey",
-        "email": "softaliancecom@gmail.com"
-    }
-],
+        {
+            "name": "Alexey",
+            "email": "softaliancecom@gmail.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
